@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="656.0" prefWidth="731.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.NewEmployeeSceneController">
+   <children>
+      <Label layoutX="50.0" layoutY="127.0" text="First Name:" />
+      <Label layoutX="50.0" layoutY="166.0" text="Last Name:" />
+      <Label layoutX="50.0" layoutY="351.0" text="Contact number:" />
+      <Label layoutX="313.0" layoutY="92.0" />
+      <Label layoutX="403.0" layoutY="288.0" text="Bank Name:" />
+      <Label layoutX="403.0" layoutY="322.0" text="BSB:" />
+      <Label layoutX="403.0" layoutY="387.0" text="Account Number:" />
+      <Label layoutX="50.0" layoutY="23.0" text="Add Employee" textFill="#004e89">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Button layoutX="629.0" layoutY="28.0" mnemonicParsing="false" onAction="#logOutBtnEvent" prefHeight="35.0" prefWidth="62.0" style="-fx-background-color: #004e89;" text="Log Out" textFill="#efefd0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button layoutX="554.0" layoutY="28.0" mnemonicParsing="false" onAction="#homeBtnEvent" prefHeight="35.0" prefWidth="50.0" style="-fx-background-color: #004e89;" text="Home" textFill="#efefd0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Label layoutX="50.0" layoutY="86.0" text="Personal Details">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="50.0" layoutY="206.0" text="Date Of Birth" />
+      <Label layoutX="50.0" layoutY="245.0" text="Gender" />
+      <Label layoutX="50.0" layoutY="281.0" text="Address Line 1:" />
+      <Label layoutX="50.0" layoutY="314.0" text="Address Line 2:" />
+      <Label layoutX="403.0" layoutY="86.0" text="Employment Details">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="403.0" layoutY="135.0" text="Start Date: " />
+      <Label layoutX="403.0" layoutY="171.0" text="Job Title:" />
+      <Label layoutX="403.0" layoutY="246.0" text="Bank Details">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="403.0" layoutY="355.0" text="Account Name:" />
+      <TextField fx:id="fnField" layoutX="164.0" layoutY="123.0" />
+      <TextField fx:id="lnField" layoutX="164.0" layoutY="162.0" />
+      <TextField fx:id="addressLine1Field" layoutX="164.0" layoutY="277.0" />
+      <TextField fx:id="addressLine2Field" layoutX="164.0" layoutY="310.0" />
+      <TextField fx:id="contactNumberField" layoutX="164.0" layoutY="347.0" />
+      <TextField fx:id="jobTitleField" layoutX="517.0" layoutY="167.0" />
+      <TextField fx:id="bankNameField" layoutX="517.0" layoutY="284.0" />
+      <TextField fx:id="bsbField" layoutX="517.0" layoutY="318.0" />
+      <TextField fx:id="accountNameField" layoutX="517.0" layoutY="351.0" />
+      <TextField fx:id="accountNumberField" layoutX="517.0" layoutY="383.0" />
+      <Button layoutX="319.0" layoutY="592.0" mnemonicParsing="false" onAction="#addEmployeeEvent" prefHeight="35.0" prefWidth="98.0" style="-fx-background-color: #004e89;" text="Add Employee" textFill="#efefd0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <DatePicker fx:id="startDateField" layoutX="517.0" layoutY="131.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></DatePicker>
+      <MenuButton fx:id="genderMenu" layoutX="164.0" layoutY="241.0" mnemonicParsing="false" onAction="#genderMenuEvent" prefHeight="26.0" prefWidth="150.0" style="-fx-background-color: #004e89;" text="No Selection" textFill="#efefd0">
+        <items>
+          <MenuItem mnemonicParsing="false" onAction="#genderMenuEvent" text="Male" />
+          <MenuItem mnemonicParsing="false" onAction="#genderMenuEvent" text="Female" />
+            <MenuItem mnemonicParsing="false" onAction="#genderMenuEvent" text="Other" />
+        </items>
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </MenuButton>
+      <DatePicker fx:id="dobField" layoutX="164.0" layoutY="202.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></DatePicker>
+      <Label layoutX="50.0" layoutY="386.0" text="Employee Type" />
+      <MenuButton fx:id="employeeTypeMenu" layoutX="163.0" layoutY="381.0" mnemonicParsing="false" onAction="#employeeTypeMenuEvent" prefHeight="26.0" prefWidth="150.0" style="-fx-background-color: #004e89;" text="No Selection" textFill="#efefd0">
+        <items>
+          <MenuItem mnemonicParsing="false" onAction="#employeeTypeMenuEvent" text="Employee" />
+          <MenuItem mnemonicParsing="false" onAction="#employeeTypeMenuEvent" text="Staff" />
+        </items>
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </MenuButton>
+      <Label layoutX="50.0" layoutY="427.0" text="Email Address" />
+      <TextField fx:id="emailField" layoutX="163.0" layoutY="425.0" />
+      <Label layoutX="50.0" layoutY="467.0" text="Password" />
+      <Label layoutX="50.0" layoutY="507.0" text="Confirm Password" />
+      <TextField fx:id="passwordField" layoutX="163.0" layoutY="463.0" />
+      <TextField fx:id="confirmPasswordField" layoutX="163.0" layoutY="503.0" />
+      <Text fx:id="errorMessage" fill="RED" layoutX="272.0" layoutY="571.0" strokeType="OUTSIDE" strokeWidth="0.0" text="error message" visible="false" wrappingWidth="262.9367370605469">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

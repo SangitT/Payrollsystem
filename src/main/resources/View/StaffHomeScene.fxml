@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="694.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.StaffHomeSceneController">
+   <children>
+      <Label layoutX="138.0" layoutY="191.0" text="Welcome," />
+      <Label layoutX="69.0" layoutY="124.0" text="Staff Home Page" textFill="#004e89">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Button layoutX="438.0" layoutY="89.0" mnemonicParsing="false" onAction="#registerNewEmployeeEvent" prefHeight="35.0" prefWidth="170.0" style="-fx-background-color: #004e89;" text="Add Employee" textAlignment="CENTER" textFill="#efefd0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button layoutX="438.0" layoutY="153.0" mnemonicParsing="false" onAction="#searchEmployeeEvent" prefHeight="35.0" prefWidth="170.0" style="-fx-background-color: #004e89;" text="Search Employee" textAlignment="CENTER" textFill="#efefd0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button layoutX="438.0" layoutY="215.0" mnemonicParsing="false" onAction="#generateReportEvent" prefHeight="35.0" prefWidth="170.0" style="-fx-background-color: #004e89;" text="Create Reports" textAlignment="CENTER" textFill="#efefd0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button layoutX="438.0" layoutY="275.0" mnemonicParsing="false" onAction="#logOutEvent" prefHeight="35.0" prefWidth="170.0" style="-fx-background-color: #004e89;" text="Log Out" textFill="#efefd0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Label fx:id="employeeNameField" layoutX="69.0" layoutY="241.0" prefHeight="20.0" prefWidth="264.0" text="Staff Name" textFill="#ff6b35">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

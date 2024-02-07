@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="573.0" prefWidth="731.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ViewEmployeeSceneController">
+   <children>
+      <Label layoutX="269.0" layoutY="27.0" text="View Employee" textFill="#004e89">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="33.0" layoutY="170.0" text="First Name:" />
+      <Label layoutX="33.0" layoutY="209.0" text="Last Name:" />
+      <Label layoutX="33.0" layoutY="394.0" text="Contact number:" />
+      <Label layoutX="313.0" layoutY="132.0" />
+      <Button layoutX="592.0" layoutY="28.0" mnemonicParsing="false" onAction="#logOutBtnEvent" style="-fx-background-color: #004e89;" text="Log Out" textFill="#efefd0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button layoutX="528.0" layoutY="28.0" mnemonicParsing="false" onAction="#employeePortalBtn" style="-fx-background-color: #004e89;" text="Home" textFill="#efefd0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Label layoutX="32.0" layoutY="122.0" text="Personal Details" textFill="#1a659e">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="33.0" layoutY="249.0" text="Date Of Birth: " />
+      <Label layoutX="33.0" layoutY="288.0" text="Gender: " />
+      <Label layoutX="33.0" layoutY="324.0" text="Address: " />
+      <TextField fx:id="firstNameField" editable="false" layoutX="147.0" layoutY="166.0" style="-fx-background-color: white;" />
+      <TextField fx:id="lastNameField" editable="false" layoutX="147.0" layoutY="205.0" style="-fx-background-color: white;" />
+      <TextField fx:id="addressField" editable="false" layoutX="147.0" layoutY="320.0" prefHeight="59.0" prefWidth="150.0" style="-fx-background-color: white;" />
+      <TextField fx:id="contactNumberField" editable="false" layoutX="147.0" layoutY="390.0" style="-fx-background-color: white;" />
+      <Label layoutX="33.0" layoutY="432.0" text="Email Address" />
+      <TextField fx:id="emailField" editable="false" layoutX="146.0" layoutY="428.0" prefHeight="26.0" prefWidth="150.0" style="-fx-background-color: white;">
+         <font>
+            <Font size="11.0" />
+         </font></TextField>
+      <TextField fx:id="genderField" editable="false" layoutX="147.0" layoutY="284.0" style="-fx-background-color: white;" />
+      <Label layoutX="364.0" layoutY="357.0" text="Bank Name:" />
+      <Label layoutX="364.0" layoutY="394.0" text="BSB:" />
+      <Label layoutX="364.0" layoutY="467.0" text="Account Number:" />
+      <Label layoutX="364.0" layoutY="122.0" text="Employment Details" textFill="#1a659e">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="364.0" layoutY="172.0" text="Start Date: " />
+      <Label layoutX="364.0" layoutY="208.0" text="Job Title:" />
+      <Label layoutX="364.0" layoutY="323.0" text="Bank Details" textFill="#1a659e">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="364.0" layoutY="432.0" text="Account Name:" />
+      <TextField fx:id="jobTitleField" editable="false" layoutX="478.0" layoutY="204.0" style="-fx-background-color: white;" />
+      <TextField fx:id="bankNameField" editable="false" layoutX="478.0" layoutY="353.0" style="-fx-background-color: white;" />
+      <TextField fx:id="bsbField" editable="false" layoutX="478.0" layoutY="390.0" style="-fx-background-color: white;" />
+      <TextField fx:id="accountNameField" editable="false" layoutX="478.0" layoutY="428.0" style="-fx-background-color: white;" />
+      <TextField fx:id="accountNumberField" editable="false" layoutX="478.0" layoutY="463.0" style="-fx-background-color: white;" />
+      <Label layoutX="365.0" layoutY="240.0" text="Employee Type" />
+      <TextField fx:id="emailField1" editable="false" layoutX="478.0" layoutY="236.0" style="-fx-background-color: white;" />
+      <Label layoutX="33.0" layoutY="467.0" text="Password: " />
+      <TextField fx:id="passwordField" editable="false" layoutX="146.0" layoutY="463.0" style="-fx-background-color: white;" />
+      <TextField fx:id="dateOfBirthField" editable="false" layoutX="147.0" layoutY="245.0" style="-fx-background-color: white;" />
+      <TextField fx:id="startDateField" editable="false" layoutX="479.0" layoutY="166.0" style="-fx-background-color: white;" />
+   </children>
+</AnchorPane>

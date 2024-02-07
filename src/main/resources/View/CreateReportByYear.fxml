@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="534.0" prefWidth="852.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.CreateReportByYearController">
+   <children>
+      <Label layoutX="94.0" layoutY="27.0" text="Payroll Report By Year" textFill="#004e89">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Button layoutX="184.0" layoutY="84.0" mnemonicParsing="false" onAction="#logOutEvent" style="-fx-background-color: #004e89;" text="Log Out" textFill="#efefd0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <Button layoutX="110.0" layoutY="84.0" mnemonicParsing="false" onAction="#homeBtnEvent" style="-fx-background-color: #004e89;" text="Home" textFill="#efefd0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <Label layoutX="142.0" layoutY="166.0" text="Choose a Date: " />
+      <DatePicker fx:id="dateField" layoutX="90.0" layoutY="194.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></DatePicker>
+      <Button layoutX="90.0" layoutY="233.0" mnemonicParsing="false" onAction="#generateBtnEvent" prefHeight="35.0" prefWidth="175.0" style="-fx-background-color: #004e89;" text="Generate" textFill="#efefd0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <Text fx:id="errorMessage" fill="RED" layoutX="28.0" layoutY="351.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" visible="false" wrappingWidth="300.53668212890625">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+      </Text>
+      <Label fx:id="weekStartLabel" layoutX="413.0" layoutY="32.0" text="Year Begin Date:" visible="false" />
+      <Text fx:id="startDate" fill="#303396" layoutX="523.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" visible="false" />
+      <Label fx:id="weekEndLabel" layoutX="640.0" layoutY="32.0" text="Year End Date:" visible="false" />
+      <Text fx:id="endDate" fill="#303396" layoutX="738.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" visible="false" />
+      <Label fx:id="totalHoursLabel" layoutX="475.0" layoutY="127.0" text="Total Hours:" visible="false" />
+      <Text fx:id="totalHours" fill="#303396" layoutX="715.0" layoutY="140.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" visible="false" />
+      <Label fx:id="totalEmployeeLabel" layoutX="475.0" layoutY="97.0" text="Total Employee:" visible="false" />
+      <Text fx:id="totalEmployee" fill="#303396" layoutX="715.0" layoutY="110.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" visible="false" />
+      <Label fx:id="totalPayLabel" layoutX="475.0" layoutY="183.0" text="Gross Amount:" visible="false" />
+      <Text fx:id="totalPay" fill="#303396" layoutX="715.0" layoutY="196.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" visible="false" />
+      <Label fx:id="payRateLabel" layoutX="475.0" layoutY="153.0" text="Wages rate:" visible="false" />
+      <Text fx:id="payRate" fill="#303396" layoutX="715.0" layoutY="166.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" visible="false" />
+      <Label fx:id="superRateLabel" layoutX="475.0" layoutY="293.0" text="Super Annuation Rate" visible="false" />
+      <Text fx:id="superRate" fill="#303396" layoutX="715.0" layoutY="306.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" visible="false" />
+      <Label fx:id="totalTaxLabel" layoutX="475.0" layoutY="259.0" text="Tax Total:" visible="false" />
+      <Text fx:id="totalTax" fill="#303396" layoutX="715.0" layoutY="272.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" visible="false" />
+      <Label fx:id="totalSuperLabel" layoutX="475.0" layoutY="326.0" text="Total Super Annuation:" visible="false" />
+      <Text fx:id="totalSuper" fill="#303396" layoutX="715.0" layoutY="340.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" visible="false" />
+      <Label fx:id="netPayLabel" layoutX="475.0" layoutY="408.0" text="Net Pay to Employees" visible="false" />
+      <Text fx:id="netPay" fill="#303396" layoutX="713.0" layoutY="422.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" visible="false">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Text>
+      <Line endX="-5.600006103515625" endY="326.69293212890625" layoutX="392.0" layoutY="207.0" startX="-5.600006103515625" startY="-207.0" />
+      <Line fx:id="line1" endX="430.0" endY="8.807083129882812" layoutX="402.0" layoutY="217.0" startX="8.399993896484375" startY="8.80706787109375" visible="false" />
+      <Line fx:id="line2" endX="430.0" endY="8.807083129882812" layoutX="405.0" layoutY="369.0" startX="8.399993896484375" startY="8.80706787109375" visible="false" />
+   </children>
+</AnchorPane>
